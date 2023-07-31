@@ -27,7 +27,7 @@ const ConfirmStep = () => {
   }
   return (
     <ConfirmForm asChild>
-      <form onSubmit={handleSubmit(handleConfirmScheduling)}>
+      <form onSubmit={() => handleSubmit(handleConfirmScheduling)}>
         <FormHeader>
           <Text>
             <CalendarBlank />
