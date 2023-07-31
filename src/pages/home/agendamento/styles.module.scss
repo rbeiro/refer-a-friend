@@ -1,0 +1,21 @@
+.container {
+  max-width: 852px;
+  padding: 0 2rem;
+  margin: 5rem auto 2rem;
+}
+
+.user {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__avatar {
+    &--image {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--rounded-full);
+    }
+  }
+}

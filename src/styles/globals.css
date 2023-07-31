@@ -1,0 +1,106 @@
+@layer reset, base, tokens, recipes, utilities;
+@import url("@rbeiro-ui/tokens/dist/css");
+@import url("@rbeiro-ui/tokens/dist/colors/gray-scale");
+
+:root {
+  --color-primary: #4ea8de;
+
+  --color-gray100: #e1e1e6;
+  --color-gray200: #a9a9b2;
+  --color-gray400: #7c7c8a;
+  --color-gray500: #505059;
+  --color-gray600: #323238;
+  --color-gray700: #29292e;
+  --color-gray800: #202024;
+  --color-gray900: #121214;
+
+  --color-red1: #1f1315;
+  --color-red2: #291415;
+  --color-red3: #3c181a;
+  --color-red4: #481a1d;
+  --color-red5: #541b1f;
+  --color-red6: #671e22;
+  --color-red7: #822025;
+  --color-red8: #aa2429;
+  --color-red9: #e5484d;
+  --color-red10: #f2555a;
+  --color-red11: #ff6369;
+  --color-red12: #feecee;
+
+  --color-grass1: #0d1912;
+  --color-grass2: #0f1e13;
+  --color-grass3: #132819;
+  --color-grass4: #16301d;
+  --color-grass5: #193921;
+  --color-grass6: #1d4427;
+  --color-grass7: #245530;
+  --color-grass8: #2f6e3b;
+  --color-grass9: #46a758;
+  --color-grass10: #55b467;
+  --color-grass11: #63c174;
+  --color-grass12: #e5fbeb;
+
+  --transition-basic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  --color-loContrast: var(--color-gray1);
+  --color-hiContrast: var(--color-gray12);
+}
+
+.light-theme {
+  --color-loContrast: var(--color-gray1);
+  --color-hiContrast: var(--color-gray12);
+
+  --color-red1: #fffcfc;
+  --color-red2: #fff8f8;
+  --color-red3: #ffefef;
+  --color-red4: #ffe5e5;
+  --color-red5: #fdd8d8;
+  --color-red6: #f9c6c6;
+  --color-red7: #f3aeaf;
+  --color-red8: #eb9091;
+  --color-red9: #e5484d;
+  --color-red10: #dc3d43;
+  --color-red11: #cd2b31;
+  --color-red12: #381316;
+
+  --color-grass1: #fbfefb;
+  --color-grass2: #f3fcf3;
+  --color-grass3: #ebf9eb;
+  --color-grass4: #dff3df;
+  --color-grass5: #ceebcf;
+  --color-grass6: #b7dfba;
+  --color-grass7: #97cf9c;
+  --color-grass8: #65ba75;
+  --color-grass9: #46a758;
+  --color-grass10: #3d9a50;
+  --color-grass11: #297c3b;
+  --color-grass12: #1b311e;
+
+  --input-label-background: var(--color-gray1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body,
+input,
+textarea {
+  font-family: var(--text-font);
+  color: var(--color-hiContrast);
+  background-color: var(--color-loContrast);
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-height: 100vh;
+}

@@ -1,0 +1,17 @@
+@layer utilities {
+  .font_var\(--text-font\) {
+    font-family: var(--text-font)
+    }
+
+  .leading_var\(--lineHeight-base\) {
+    line-height: var(--lineHeight-base)
+    }
+
+  .m_0 {
+    margin: 0
+    }
+
+  .text_var\(--color-hiContrast\) {
+    color: var(--color-hiContrast)
+    }
+}

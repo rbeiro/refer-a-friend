@@ -1,0 +1,97 @@
+.calendar {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 500;
+    text-transform: capitalize;
+
+    & span {
+      color: var(--color-gray200);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--color-gray200);
+
+    & button {
+      all: unset;
+      cursor: pointer;
+      line-height: 0;
+      border-radius: var(--rounded-sm);
+
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+
+      &:hover {
+        color: var(--color-hiContrast);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 var(--color-hiContrast);
+      }
+    }
+  }
+
+  &__body {
+    width: 100%;
+    font-family: var(--text-font);
+    border-spacing: 0.25rem;
+    table-layout: fixed;
+    border-collapse: separate;
+
+    & thead th {
+      color: var(--color-gray200);
+      font-weight: 500;
+      font-size: var(--fontSize-sm);
+    }
+
+    & tbody::before {
+      content: "";
+      display: block;
+      height: 0.75rem;
+    }
+
+    & tbody td {
+      box-sizing: border-box;
+    }
+  }
+
+  &__day {
+    all: unset;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: var(--color-gray600);
+    text-align: center;
+    cursor: pointer;
+    border-radius: var(--rounded-md);
+
+    &:disabled {
+      background: none;
+      cursor: default;
+      opacity: 0.4;
+    }
+
+    &:not(:disabled):hover {
+      background: var(--color-gray500);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 var(--color-hiContrast);
+    }
+  }
+}

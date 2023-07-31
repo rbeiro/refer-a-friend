@@ -1,0 +1,29 @@
+@layer utilities {
+  .pos_relative {
+    position: relative
+    }
+
+  .max-w_8xl {
+    max-width: 8xl
+    }
+
+  .mx_auto {
+    margin-inline: auto
+    }
+
+  .px_4 {
+    padding-inline: 4
+    }
+
+  @media screen and (min-width: 768px) {
+    .md\:px_6 {
+      padding-inline: 6
+    }
+        }
+
+  @media screen and (min-width: 1024px) {
+    .lg\:px_8 {
+      padding-inline: 8
+    }
+        }
+}

@@ -1,0 +1,43 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "explorer.compactFolders": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "editor.tokenColorCustomizations": {
+    "[Material Theme*]": {
+        "textMateRules": [
+            {
+              "scope": [
+                "variable.parameter"
+              ],
+
+              "settings": {
+                  "foreground": "#fdfd72"
+              }
+            },
+            {
+              "scope":[
+                "meta.type.annotation",
+                "entity.name.type",
+                "meta.parameters",
+                "meta.function",
+                "source",
+              ],
+
+              "settings": {
+                "foreground": "#96C7F2"
+              }
+            }
+        ]
+    },
+},
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less"
+  ]
+}

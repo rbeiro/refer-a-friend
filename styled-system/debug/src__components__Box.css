@@ -1,0 +1,17 @@
+@layer utilities {
+  .rounded_var\(--rounded-md\) {
+    border-radius: var(--rounded-md)
+    }
+
+  .bg_gray\.800 {
+    background: var(--colors-gray-800)
+    }
+
+  .border_1px_solid_token\(colors\.gray\.600\) {
+    border: 1px solid var(--colors-gray-600)
+    }
+
+  .p_1rem {
+    padding: 1rem
+    }
+}

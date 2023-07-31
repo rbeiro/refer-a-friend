@@ -1,0 +1,1822 @@
+{
+  "cssVarRoot": ":where(:root, :host)",
+  "jsxFactory": "styled",
+  "outExtension": "mjs",
+  "shorthands": true,
+  "syntax": "object-literal",
+  "conditions": {
+    "hover": "&:is(:hover, [data-hover])",
+    "focus": "&:is(:focus, [data-focus])",
+    "focusWithin": "&:focus-within",
+    "focusVisible": "&:is(:focus-visible, [data-focus-visible])",
+    "disabled": "&:is(:disabled, [disabled], [data-disabled])",
+    "active": "&:is(:active, [data-active])",
+    "visited": "&:visited",
+    "target": "&:target",
+    "readOnly": "&:is(:read-only, [data-read-only])",
+    "readWrite": "&:read-write",
+    "empty": "&:is(:empty, [data-empty])",
+    "checked": "&:is(:checked, [data-checked], [aria-checked=true])",
+    "enabled": "&:enabled",
+    "expanded": "&:is([aria-expanded=true], [data-expanded])",
+    "highlighted": "&[data-highlighted]",
+    "before": "&::before",
+    "after": "&::after",
+    "firstLetter": "&::first-letter",
+    "firstLine": "&::first-line",
+    "marker": "&::marker",
+    "selection": "&::selection",
+    "file": "&::file-selector-button",
+    "backdrop": "&::backdrop",
+    "first": "&:first-child",
+    "last": "&:last-child",
+    "only": "&:only-child",
+    "even": "&:nth-child(even)",
+    "odd": "&:nth-child(odd)",
+    "firstOfType": "&:first-of-type",
+    "lastOfType": "&:last-of-type",
+    "onlyOfType": "&:only-of-type",
+    "peerFocus": ".peer:is(:focus, [data-focus]) ~ &",
+    "peerHover": ".peer:is(:hover, [data-hover]) ~ &",
+    "peerActive": ".peer:is(:active, [data-active]) ~ &",
+    "peerFocusWithin": ".peer:focus-within ~ &",
+    "peerFocusVisible": ".peer:is(:focus-visible, [data-focus-visible]) ~ &",
+    "peerDisabled": ".peer:is(:disabled, [disabled], [data-disabled]) ~ &",
+    "peerChecked": ".peer:is(:checked, [data-checked], [aria-checked=true]) ~ &",
+    "peerInvalid": ".peer:is(:invalid, [data-invalid], [aria-invalid=true]) ~ &",
+    "peerExpanded": ".peer:is([aria-expanded=true], [data-expanded]) ~ &",
+    "peerPlaceholderShown": ".peer:placeholder-shown ~ &",
+    "groupFocus": ".group:is(:focus, [data-focus]) &",
+    "groupHover": ".group:is(:hover, [data-hover]) &",
+    "groupActive": ".group:is(:active, [data-active]) &",
+    "groupFocusWithin": ".group:focus-within &",
+    "groupFocusVisible": ".group:is(:focus-visible, [data-focus-visible]) &",
+    "groupDisabled": ".group:is(:disabled, [disabled], [data-disabled]) &",
+    "groupChecked": ".group:is(:checked, [data-checked], [aria-checked=true]) &",
+    "groupExpanded": ".group:is([aria-expanded=true], [data-expanded]) &",
+    "groupInvalid": ".group:invalid &",
+    "indeterminate": "&:is(:indeterminate, [data-indeterminate], [aria-checked=mixed])",
+    "required": "&:required",
+    "valid": "&:is(:valid, [data-valid])",
+    "invalid": "&:is(:invalid, [data-invalid])",
+    "autofill": "&:autofill",
+    "inRange": "&:in-range",
+    "outOfRange": "&:out-of-range",
+    "placeholder": "&::placeholder",
+    "placeholderShown": "&:placeholder-shown",
+    "pressed": "&:is([aria-pressed=true], [data-pressed])",
+    "selected": "&:is([aria-selected=true], [data-selected])",
+    "default": "&:default",
+    "optional": "&:optional",
+    "open": "&[open]",
+    "fullscreen": "&:fullscreen",
+    "loading": "&:is([data-loading], [aria-busy=true])",
+    "currentPage": "&[aria-current=page]",
+    "currentStep": "&[aria-current=step]",
+    "motionReduce": "@media (prefers-reduced-motion: reduce)",
+    "motionSafe": "@media (prefers-reduced-motion: no-preference)",
+    "print": "@media print",
+    "landscape": "@media (orientation: landscape)",
+    "portrait": "@media (orientation: portrait)",
+    "dark": " &.dark, .dark &",
+    "light": " &.light, .light &",
+    "osDark": "@media (prefers-color-scheme: dark)",
+    "osLight": "@media (prefers-color-scheme: light)",
+    "highConstrast": "@media (forced-colors: active)",
+    "lessContrast": "@media (prefers-contrast: less)",
+    "moreContrast": "@media (prefers-contrast: more)",
+    "ltr": "[dir=ltr] &",
+    "rtl": "[dir=rtl] &",
+    "scrollbar": "&::-webkit-scrollbar",
+    "scrollbarThumb": "&::-webkit-scrollbar-thumb",
+    "scrollbarTrack": "&::-webkit-scrollbar-track",
+    "horizontal": "&[data-orientation=horizontal]",
+    "vertical": "&[data-orientation=vertical]"
+  },
+  "theme": {
+    "tokens": {
+      "colors": {
+        "primary": {
+          "value": "#4EA8DE"
+        },
+        "loContrast": {
+          "value": "var(--color-gray1)"
+        },
+        "hiContrast": {
+          "value": "var(--color-gray12)"
+        },
+        "gray": {
+          "1": {
+            "value": "var(--color-gray1)"
+          },
+          "2": {
+            "value": "var(--color-gray2)"
+          },
+          "3": {
+            "value": "var(--color-gray3)"
+          },
+          "4": {
+            "value": "var(--color-gray4)"
+          },
+          "5": {
+            "value": "var(--color-gray5)"
+          },
+          "6": {
+            "value": "var(--color-gray6)"
+          },
+          "7": {
+            "value": "var(--color-gray7)"
+          },
+          "8": {
+            "value": "var(--color-gray8)"
+          },
+          "9": {
+            "value": "var(--color-gray9)"
+          },
+          "10": {
+            "value": "var(--color-gray10)"
+          },
+          "11": {
+            "value": "var(--color-gray11)"
+          },
+          "12": {
+            "value": "var(--color-gray12)"
+          },
+          "100": {
+            "value": "#e1e1e6"
+          },
+          "200": {
+            "value": "#a9a9b2"
+          },
+          "400": {
+            "value": "#7c7c8a"
+          },
+          "500": {
+            "value": "#505059"
+          },
+          "600": {
+            "value": "#323238"
+          },
+          "700": {
+            "value": "#29292e"
+          },
+          "800": {
+            "value": "#202024"
+          },
+          "900": {
+            "value": "#121214"
+          }
+        },
+        "error": {
+          "background": {
+            "value": "var(--color-red1)"
+          },
+          "border": {
+            "value": "var(--color-red7)"
+          },
+          "color": {
+            "value": "var(--color-red11)"
+          }
+        },
+        "success": {
+          "background": {
+            "value": "var(--color-grass1)"
+          },
+          "border": {
+            "value": "var(--color-grass7)"
+          },
+          "color": {
+            "value": "var(--color-grass11)"
+          }
+        }
+      }
+    },
+    "keyframes": {
+      "spin": {
+        "to": {
+          "transform": "rotate(360deg)"
+        }
+      },
+      "ping": {
+        "75%, 100%": {
+          "transform": "scale(2)",
+          "opacity": "0"
+        }
+      },
+      "pulse": {
+        "50%": {
+          "opacity": ".5"
+        }
+      },
+      "bounce": {
+        "0%, 100%": {
+          "transform": "translateY(-25%)",
+          "animationTimingFunction": "cubic-bezier(0.8,0,1,1)"
+        },
+        "50%": {
+          "transform": "none",
+          "animationTimingFunction": "cubic-bezier(0,0,0.2,1)"
+        }
+      }
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    },
+    "textStyles": {
+      "xs": {
+        "value": {
+          "fontSize": "0.75rem",
+          "lineHeight": "1rem"
+        }
+      },
+      "sm": {
+        "value": {
+          "fontSize": "0.875rem",
+          "lineHeight": "1.25rem"
+        }
+      },
+      "md": {
+        "value": {
+          "fontSize": "1rem",
+          "lineHeight": "1.5rem"
+        }
+      },
+      "lg": {
+        "value": {
+          "fontSize": "1.125rem",
+          "lineHeight": "1.75rem"
+        }
+      },
+      "xl": {
+        "value": {
+          "fontSize": "1.25rem",
+          "lineHeight": "1.75rem"
+        }
+      },
+      "2xl": {
+        "value": {
+          "fontSize": "1.5rem",
+          "lineHeight": "2rem"
+        }
+      },
+      "3xl": {
+        "value": {
+          "fontSize": "1.875rem",
+          "lineHeight": "2.25rem"
+        }
+      },
+      "4xl": {
+        "value": {
+          "fontSize": "2.25rem",
+          "lineHeight": "2.5rem"
+        }
+      },
+      "5xl": {
+        "value": {
+          "fontSize": "3rem",
+          "lineHeight": "1"
+        }
+      },
+      "6xl": {
+        "value": {
+          "fontSize": "3.75rem",
+          "lineHeight": "1"
+        }
+      },
+      "7xl": {
+        "value": {
+          "fontSize": "4.5rem",
+          "lineHeight": "1"
+        }
+      },
+      "8xl": {
+        "value": {
+          "fontSize": "6rem",
+          "lineHeight": "1"
+        }
+      },
+      "9xl": {
+        "value": {
+          "fontSize": "8rem",
+          "lineHeight": "1"
+        }
+      }
+    }
+  },
+  "patterns": {
+    "box": {},
+    "flex": {
+      "properties": {
+        "align": {
+          "type": "property",
+          "value": "alignItems"
+        },
+        "justify": {
+          "type": "property",
+          "value": "justifyContent"
+        },
+        "direction": {
+          "type": "property",
+          "value": "flexDirection"
+        },
+        "wrap": {
+          "type": "property",
+          "value": "flexWrap"
+        },
+        "basis": {
+          "type": "property",
+          "value": "flexBasis"
+        },
+        "grow": {
+          "type": "property",
+          "value": "flexGrow"
+        },
+        "shrink": {
+          "type": "property",
+          "value": "flexShrink"
+        }
+      }
+    },
+    "stack": {
+      "properties": {
+        "align": {
+          "type": "property",
+          "value": "alignItems"
+        },
+        "justify": {
+          "type": "property",
+          "value": "justifyContent"
+        },
+        "direction": {
+          "type": "property",
+          "value": "flexDirection"
+        },
+        "gap": {
+          "type": "property",
+          "value": "gap"
+        }
+      }
+    },
+    "vstack": {
+      "jsx": "VStack",
+      "properties": {
+        "justify": {
+          "type": "property",
+          "value": "justifyContent"
+        },
+        "gap": {
+          "type": "property",
+          "value": "gap"
+        }
+      }
+    },
+    "hstack": {
+      "jsx": "HStack",
+      "properties": {
+        "justify": {
+          "type": "property",
+          "value": "justifyContent"
+        },
+        "gap": {
+          "type": "property",
+          "value": "gap"
+        }
+      }
+    },
+    "spacer": {
+      "properties": {
+        "size": {
+          "type": "token",
+          "value": "spacing"
+        }
+      }
+    },
+    "square": {
+      "properties": {
+        "size": {
+          "type": "property",
+          "value": "width"
+        }
+      }
+    },
+    "circle": {
+      "properties": {
+        "size": {
+          "type": "property",
+          "value": "width"
+        }
+      }
+    },
+    "center": {
+      "properties": {
+        "inline": {
+          "type": "boolean"
+        }
+      }
+    },
+    "linkBox": {},
+    "linkOverlay": {
+      "jsxElement": "a"
+    },
+    "aspectRatio": {
+      "properties": {
+        "ratio": {
+          "type": "number"
+        }
+      },
+      "blocklist": [
+        "aspectRatio"
+      ]
+    },
+    "grid": {
+      "properties": {
+        "gap": {
+          "type": "property",
+          "value": "gap"
+        },
+        "columnGap": {
+          "type": "property",
+          "value": "gap"
+        },
+        "rowGap": {
+          "type": "property",
+          "value": "gap"
+        },
+        "columns": {
+          "type": "number"
+        },
+        "minChildWidth": {
+          "type": "token",
+          "value": "sizes",
+          "property": "width"
+        }
+      }
+    },
+    "gridItem": {
+      "properties": {
+        "colSpan": {
+          "type": "number"
+        },
+        "rowSpan": {
+          "type": "number"
+        },
+        "colStart": {
+          "type": "number"
+        },
+        "rowStart": {
+          "type": "number"
+        },
+        "colEnd": {
+          "type": "number"
+        },
+        "rowEnd": {
+          "type": "number"
+        }
+      }
+    },
+    "wrap": {
+      "properties": {
+        "gap": {
+          "type": "property",
+          "value": "gap"
+        },
+        "rowGap": {
+          "type": "property",
+          "value": "gap"
+        },
+        "columnGap": {
+          "type": "property",
+          "value": "gap"
+        },
+        "align": {
+          "type": "property",
+          "value": "alignItems"
+        },
+        "justify": {
+          "type": "property",
+          "value": "justifyContent"
+        }
+      }
+    },
+    "container": {},
+    "divider": {
+      "properties": {
+        "orientation": {
+          "type": "enum",
+          "value": [
+            "horizontal",
+            "vertical"
+          ]
+        },
+        "thickness": {
+          "type": "token",
+          "value": "sizes",
+          "property": "borderWidth"
+        },
+        "color": {
+          "type": "token",
+          "value": "colors",
+          "property": "borderColor"
+        }
+      }
+    },
+    "float": {
+      "properties": {
+        "offsetX": {
+          "type": "token",
+          "value": "spacing",
+          "property": "left"
+        },
+        "offsetY": {
+          "type": "token",
+          "value": "spacing",
+          "property": "top"
+        },
+        "offset": {
+          "type": "token",
+          "value": "spacing",
+          "property": "top"
+        },
+        "placement": {
+          "type": "enum",
+          "value": [
+            "bottom-end",
+            "bottom-start",
+            "top-end",
+            "top-start",
+            "bottom-center",
+            "top-center",
+            "middle-center",
+            "middle-end",
+            "middle-start"
+          ]
+        }
+      }
+    }
+  },
+  "utilities": {
+    "aspectRatio": {
+      "className": "aspect",
+      "values": {
+        "auto": "auto",
+        "square": "1 / 1",
+        "landscape": "4 / 3",
+        "portrait": "3 / 4",
+        "wide": "16 / 9",
+        "ultrawide": "18 / 5",
+        "golden": "1.618 / 1"
+      }
+    },
+    "boxDecorationBreak": {
+      "className": "decoration"
+    },
+    "zIndex": {
+      "className": "z"
+    },
+    "boxSizing": {
+      "className": "box"
+    },
+    "objectPosition": {
+      "className": "object"
+    },
+    "objectFit": {
+      "className": "object"
+    },
+    "overscrollBehavior": {
+      "className": "overscroll"
+    },
+    "overscrollBehaviorX": {
+      "className": "overscroll-x"
+    },
+    "overscrollBehaviorY": {
+      "className": "overscroll-y"
+    },
+    "position": {
+      "className": "pos",
+      "shorthand": "pos"
+    },
+    "top": {
+      "className": "top",
+      "values": "spacing"
+    },
+    "left": {
+      "className": "left",
+      "values": "spacing"
+    },
+    "insetInline": {
+      "className": "inset-x",
+      "values": "spacing"
+    },
+    "insetBlock": {
+      "className": "inset-y",
+      "values": "spacing"
+    },
+    "inset": {
+      "className": "inset"
+    },
+    "insetBlockEnd": {
+      "className": "inset-b",
+      "values": "spacing"
+    },
+    "insetBlockStart": {
+      "className": "inset-t",
+      "values": "spacing"
+    },
+    "insetInlineEnd": {
+      "className": "end",
+      "values": "spacing",
+      "shorthand": [
+        "insetEnd",
+        "end"
+      ]
+    },
+    "insetInlineStart": {
+      "className": "start",
+      "values": "spacing",
+      "shorthand": [
+        "insetStart",
+        "start"
+      ]
+    },
+    "right": {
+      "className": "right",
+      "values": "spacing"
+    },
+    "bottom": {
+      "className": "bottom",
+      "values": "spacing"
+    },
+    "insetX": {
+      "className": "inset-x",
+      "values": "spacing",
+      "property": "insetInline"
+    },
+    "insetY": {
+      "className": "inset-y",
+      "values": "spacing",
+      "property": "insetBlock"
+    },
+    "float": {
+      "className": "float",
+      "values": [
+        "left",
+        "right",
+        "start",
+        "end"
+      ]
+    },
+    "visibility": {
+      "className": "vis"
+    },
+    "display": {
+      "className": "d"
+    },
+    "hideFrom": {
+      "className": "hide",
+      "values": "breakpoints"
+    },
+    "hideBelow": {
+      "className": "show",
+      "values": "breakpoints"
+    },
+    "flexBasis": {
+      "className": "basis"
+    },
+    "flex": {
+      "className": "flex",
+      "values": {
+        "1": "1 1 0%",
+        "auto": "1 1 auto",
+        "initial": "0 1 auto",
+        "none": "none"
+      }
+    },
+    "flexDirection": {
+      "className": "flex",
+      "shorthand": "flexDir"
+    },
+    "flexGrow": {
+      "className": "grow"
+    },
+    "flexShrink": {
+      "className": "shrink"
+    },
+    "gridTemplateColumns": {
+      "className": "grid-cols",
+      "values": {
+        "1": "repeat(1, minmax(0, 1fr))",
+        "2": "repeat(2, minmax(0, 1fr))",
+        "3": "repeat(3, minmax(0, 1fr))",
+        "4": "repeat(4, minmax(0, 1fr))",
+        "5": "repeat(5, minmax(0, 1fr))",
+        "6": "repeat(6, minmax(0, 1fr))",
+        "7": "repeat(7, minmax(0, 1fr))",
+        "8": "repeat(8, minmax(0, 1fr))",
+        "9": "repeat(9, minmax(0, 1fr))",
+        "10": "repeat(10, minmax(0, 1fr))",
+        "11": "repeat(11, minmax(0, 1fr))",
+        "12": "repeat(12, minmax(0, 1fr))"
+      }
+    },
+    "gridTemplateRows": {
+      "className": "grid-rows",
+      "values": {
+        "1": "repeat(1, minmax(0, 1fr))",
+        "2": "repeat(2, minmax(0, 1fr))",
+        "3": "repeat(3, minmax(0, 1fr))",
+        "4": "repeat(4, minmax(0, 1fr))",
+        "5": "repeat(5, minmax(0, 1fr))",
+        "6": "repeat(6, minmax(0, 1fr))",
+        "7": "repeat(7, minmax(0, 1fr))",
+        "8": "repeat(8, minmax(0, 1fr))",
+        "9": "repeat(9, minmax(0, 1fr))",
+        "10": "repeat(10, minmax(0, 1fr))",
+        "11": "repeat(11, minmax(0, 1fr))",
+        "12": "repeat(12, minmax(0, 1fr))"
+      }
+    },
+    "gridColumn": {
+      "className": "col-span",
+      "values": {
+        "1": "span 1 / span 1",
+        "2": "span 2 / span 2",
+        "3": "span 3 / span 3",
+        "4": "span 4 / span 4",
+        "5": "span 5 / span 5",
+        "6": "span 6 / span 6",
+        "7": "span 7 / span 7",
+        "8": "span 8 / span 8",
+        "9": "span 9 / span 9",
+        "10": "span 10 / span 10",
+        "11": "span 11 / span 11",
+        "12": "span 12 / span 12",
+        "full": "1 / -1"
+      }
+    },
+    "gridRow": {
+      "className": "row-span",
+      "values": {
+        "1": "span 1 / span 1",
+        "2": "span 2 / span 2",
+        "3": "span 3 / span 3",
+        "4": "span 4 / span 4",
+        "5": "span 5 / span 5",
+        "6": "span 6 / span 6",
+        "7": "span 7 / span 7",
+        "8": "span 8 / span 8",
+        "9": "span 9 / span 9",
+        "10": "span 10 / span 10",
+        "11": "span 11 / span 11",
+        "12": "span 12 / span 12",
+        "full": "1 / -1"
+      }
+    },
+    "gridColumnStart": {
+      "className": "col-start"
+    },
+    "gridColumnEnd": {
+      "className": "col-end"
+    },
+    "gridAutoFlow": {
+      "className": "grid-flow"
+    },
+    "gridAutoColumns": {
+      "className": "auto-cols",
+      "values": {
+        "min": "min-content",
+        "max": "max-content",
+        "fr": "minmax(0, 1fr)"
+      }
+    },
+    "gridAutoRows": {
+      "className": "auto-rows",
+      "values": {
+        "min": "min-content",
+        "max": "max-content",
+        "fr": "minmax(0, 1fr)"
+      }
+    },
+    "gap": {
+      "className": "gap",
+      "values": "spacing"
+    },
+    "gridGap": {
+      "className": "gap",
+      "values": "spacing"
+    },
+    "gridRowGap": {
+      "className": "gap-x",
+      "values": "spacing"
+    },
+    "gridColumnGap": {
+      "className": "gap-y",
+      "values": "spacing"
+    },
+    "rowGap": {
+      "className": "gap-x",
+      "values": "spacing"
+    },
+    "columnGap": {
+      "className": "gap-y",
+      "values": "spacing"
+    },
+    "justifyContent": {
+      "className": "justify"
+    },
+    "alignContent": {
+      "className": "content"
+    },
+    "alignItems": {
+      "className": "items"
+    },
+    "alignSelf": {
+      "className": "self"
+    },
+    "padding": {
+      "className": "p",
+      "shorthand": "p",
+      "values": "spacing"
+    },
+    "paddingLeft": {
+      "className": "pl",
+      "shorthand": "pl",
+      "values": "spacing"
+    },
+    "paddingRight": {
+      "className": "pr",
+      "shorthand": "pr",
+      "values": "spacing"
+    },
+    "paddingTop": {
+      "className": "pt",
+      "shorthand": "pt",
+      "values": "spacing"
+    },
+    "paddingBottom": {
+      "className": "pb",
+      "shorthand": "pb",
+      "values": "spacing"
+    },
+    "paddingBlock": {
+      "className": "py",
+      "values": "spacing",
+      "shorthand": [
+        "py",
+        "paddingY"
+      ]
+    },
+    "paddingBlockEnd": {
+      "className": "pb",
+      "values": "spacing"
+    },
+    "paddingBlockStart": {
+      "className": "pt",
+      "values": "spacing"
+    },
+    "paddingInline": {
+      "className": "px",
+      "values": "spacing",
+      "shorthand": [
+        "paddingX",
+        "px"
+      ]
+    },
+    "paddingInlineEnd": {
+      "className": "pe",
+      "shorthand": [
+        "pe",
+        "paddingEnd"
+      ],
+      "values": "spacing"
+    },
+    "paddingInlineStart": {
+      "className": "ps",
+      "shorthand": [
+        "ps",
+        "paddingStart"
+      ],
+      "values": "spacing"
+    },
+    "marginLeft": {
+      "className": "ml",
+      "shorthand": "ml"
+    },
+    "marginRight": {
+      "className": "mr",
+      "shorthand": "mr"
+    },
+    "marginTop": {
+      "className": "mt",
+      "shorthand": "mt"
+    },
+    "marginBottom": {
+      "className": "mb",
+      "shorthand": "mb"
+    },
+    "margin": {
+      "className": "m",
+      "shorthand": "m"
+    },
+    "marginBlock": {
+      "className": "my",
+      "shorthand": [
+        "my",
+        "marginY"
+      ]
+    },
+    "marginBlockEnd": {
+      "className": "mb"
+    },
+    "marginBlockStart": {
+      "className": "mt"
+    },
+    "marginInline": {
+      "className": "mx",
+      "shorthand": [
+        "mx",
+        "marginX"
+      ]
+    },
+    "marginInlineEnd": {
+      "className": "me",
+      "shorthand": [
+        "me",
+        "marginEnd"
+      ]
+    },
+    "marginInlineStart": {
+      "className": "ms",
+      "shorthand": [
+        "ms",
+        "marginStart"
+      ]
+    },
+    "outlineWidth": {
+      "className": "ring",
+      "shorthand": "ringWidth"
+    },
+    "outlineColor": {
+      "className": "ring",
+      "values": "colors",
+      "shorthand": "ringColor"
+    },
+    "outline": {
+      "className": "ring",
+      "shorthand": "ring",
+      "values": "borders"
+    },
+    "outlineOffset": {
+      "className": "ring",
+      "shorthand": "ringOffset",
+      "values": "spacing"
+    },
+    "divideX": {
+      "className": "divide-x",
+      "values": {
+        "type": "string"
+      }
+    },
+    "divideY": {
+      "className": "divide-y",
+      "values": {
+        "type": "string"
+      }
+    },
+    "divideColor": {
+      "className": "divide",
+      "values": "colors"
+    },
+    "divideStyle": {
+      "className": "divide",
+      "property": "borderStyle"
+    },
+    "width": {
+      "shorthand": "w",
+      "className": "w"
+    },
+    "inlineSize": {
+      "className": "w"
+    },
+    "minWidth": {
+      "shorthand": "minW",
+      "className": "min-w"
+    },
+    "minInlineSize": {
+      "className": "min-w"
+    },
+    "maxWidth": {
+      "shorthand": "maxW",
+      "className": "max-w"
+    },
+    "maxInlineSize": {
+      "className": "max-w"
+    },
+    "height": {
+      "shorthand": "h",
+      "className": "h"
+    },
+    "blockSize": {
+      "className": "h"
+    },
+    "minHeight": {
+      "shorthand": "minH",
+      "className": "min-h"
+    },
+    "minBlockSize": {
+      "className": "min-h"
+    },
+    "maxHeight": {
+      "shorthand": "maxH",
+      "className": "max-h"
+    },
+    "maxBlockSize": {
+      "className": "max-b"
+    },
+    "color": {
+      "className": "text",
+      "values": "colors"
+    },
+    "fontFamily": {
+      "className": "font",
+      "values": "fonts"
+    },
+    "fontSize": {
+      "className": "fs",
+      "values": "fontSizes"
+    },
+    "fontWeight": {
+      "className": "font",
+      "values": "fontWeights"
+    },
+    "fontSmoothing": {
+      "className": "smoothing",
+      "values": {
+        "antialiased": "antialiased",
+        "subpixel-antialiased": "auto"
+      }
+    },
+    "fontVariantNumeric": {
+      "className": "numeric"
+    },
+    "letterSpacing": {
+      "className": "tracking",
+      "values": "letterSpacings"
+    },
+    "lineHeight": {
+      "className": "leading",
+      "values": "lineHeights"
+    },
+    "textAlign": {
+      "className": "text"
+    },
+    "textDecoration": {
+      "className": "text-decor"
+    },
+    "textDecorationColor": {
+      "className": "text-decor",
+      "values": "colors"
+    },
+    "textEmphasisColor": {
+      "className": "text-emphasis",
+      "values": "colors"
+    },
+    "textDecorationStyle": {
+      "className": "decoration"
+    },
+    "textDecorationThickness": {
+      "className": "decoration"
+    },
+    "textUnderlineOffset": {
+      "className": "underline-offset"
+    },
+    "textTransform": {
+      "className": "text"
+    },
+    "textIndent": {
+      "className": "indent",
+      "values": "spacing"
+    },
+    "textShadow": {
+      "className": "text-shadow",
+      "values": "shadows"
+    },
+    "textOverflow": {
+      "className": "text"
+    },
+    "verticalAlign": {
+      "className": "align"
+    },
+    "wordBreak": {
+      "className": "break"
+    },
+    "textWrap": {
+      "className": "text",
+      "values": [
+        "wrap",
+        "balance",
+        "nowrap"
+      ]
+    },
+    "truncate": {
+      "className": "truncate",
+      "values": {
+        "type": "boolean"
+      }
+    },
+    "lineClamp": {
+      "className": "clamp"
+    },
+    "listStyleType": {
+      "className": "list"
+    },
+    "listStylePosition": {
+      "className": "list"
+    },
+    "listStyleImage": {
+      "className": "list-img",
+      "values": "assets"
+    },
+    "backgroundPosition": {
+      "shorthand": "bgPosition",
+      "className": "bg"
+    },
+    "backgroundPositionX": {
+      "shorthand": "bgPositionX",
+      "className": "bg-x"
+    },
+    "backgroundPositionY": {
+      "shorthand": "bgPositionY",
+      "className": "bg-y"
+    },
+    "backgroundAttachment": {
+      "shorthand": "bgAttachment",
+      "className": "bg"
+    },
+    "backgroundClip": {
+      "shorthand": "bgClip",
+      "className": "bg-clip"
+    },
+    "background": {
+      "shorthand": "bg",
+      "className": "bg",
+      "values": "colors"
+    },
+    "backgroundColor": {
+      "shorthand": "bgColor",
+      "className": "bg",
+      "values": "colors"
+    },
+    "backgroundOrigin": {
+      "shorthand": "bgOrigin",
+      "className": "bg-origin"
+    },
+    "backgroundImage": {
+      "shorthand": "bgImage",
+      "className": "bg-img",
+      "values": "assets"
+    },
+    "backgroundRepeat": {
+      "shorthand": "bgRepeat",
+      "className": "bg-repeat"
+    },
+    "backgroundBlendMode": {
+      "shorthand": "bgBlendMode",
+      "className": "bg-blend"
+    },
+    "backgroundSize": {
+      "shorthand": "bgSize",
+      "className": "bg"
+    },
+    "backgroundGradient": {
+      "shorthand": "bgGradient",
+      "className": "bg-gradient"
+    },
+    "textGradient": {
+      "className": "text-gradient"
+    },
+    "gradientFrom": {
+      "className": "from",
+      "values": "colors"
+    },
+    "gradientTo": {
+      "className": "to",
+      "values": "colors"
+    },
+    "gradientVia": {
+      "className": "via",
+      "values": "colors"
+    },
+    "borderRadius": {
+      "className": "rounded",
+      "shorthand": "rounded",
+      "values": "radii"
+    },
+    "borderTopLeftRadius": {
+      "className": "rounded-tl",
+      "shorthand": "roundedTopLeft",
+      "values": "radii"
+    },
+    "borderTopRightRadius": {
+      "className": "rounded-tr",
+      "shorthand": "roundedTopRight",
+      "values": "radii"
+    },
+    "borderBottomRightRadius": {
+      "className": "rounded-br",
+      "shorthand": "roundedBottomRight",
+      "values": "radii"
+    },
+    "borderBottomLeftRadius": {
+      "className": "rounded-bl",
+      "shorthand": "roundedBottomLeft",
+      "values": "radii"
+    },
+    "borderTopRadius": {
+      "className": "rounded-t",
+      "shorthand": "roundedTop",
+      "property": "borderRadius",
+      "values": "radii"
+    },
+    "borderRightRadius": {
+      "className": "rounded-r",
+      "shorthand": "roundedRight",
+      "property": "borderRadius",
+      "values": "radii"
+    },
+    "borderBottomRadius": {
+      "className": "rounded-b",
+      "shorthand": "roundedBottom",
+      "property": "borderRadius",
+      "values": "radii"
+    },
+    "borderLeftRadius": {
+      "className": "rounded-l",
+      "shorthand": "roundedLeft",
+      "values": "radii",
+      "property": "borderRadius"
+    },
+    "borderStartStartRadius": {
+      "className": "rounded-ss",
+      "shorthand": "roundedStartStart",
+      "values": "radii"
+    },
+    "borderStartEndRadius": {
+      "className": "rounded-se",
+      "shorthand": "roundedStartEnd",
+      "values": "radii"
+    },
+    "borderStartRadius": {
+      "className": "rounded-s",
+      "values": "radii",
+      "property": "borderRadius",
+      "shorthand": "roundedStart"
+    },
+    "borderEndStartRadius": {
+      "className": "rounded-es",
+      "shorthand": "roundedEndStart",
+      "values": "radii"
+    },
+    "borderEndEndRadius": {
+      "className": "rounded-ee",
+      "shorthand": "roundedEndEnd",
+      "values": "radii"
+    },
+    "borderEndRadius": {
+      "className": "rounded-e",
+      "shorthand": "roundedEnd",
+      "property": "borderRadius",
+      "values": "radii"
+    },
+    "border": {
+      "className": "border",
+      "values": "borders"
+    },
+    "borderColor": {
+      "className": "border",
+      "values": "colors"
+    },
+    "borderInline": {
+      "className": "border-x",
+      "values": "borders",
+      "shorthand": "borderX"
+    },
+    "borderInlineWidth": {
+      "className": "border-x",
+      "values": "borderWidths",
+      "shorthand": "borderXWidth"
+    },
+    "borderInlineColor": {
+      "className": "border-x",
+      "values": "colors",
+      "shorthand": "borderXColor"
+    },
+    "borderBlock": {
+      "className": "border-y",
+      "values": "borders",
+      "shorthand": "borderY"
+    },
+    "borderBlockWidth": {
+      "className": "border-y",
+      "values": "borderWidths",
+      "shorthand": "borderYWidth"
+    },
+    "borderBlockColor": {
+      "className": "border-y",
+      "values": "colors",
+      "shorthand": "borderYColor"
+    },
+    "borderLeft": {
+      "className": "border-l",
+      "values": "borders"
+    },
+    "borderLeftColor": {
+      "className": "border-l",
+      "values": "colors"
+    },
+    "borderInlineStart": {
+      "className": "border-s",
+      "values": "borders",
+      "shorthand": "borderStart"
+    },
+    "borderInlineStartColor": {
+      "className": "border-s",
+      "values": "colors",
+      "shorthand": "borderStartColor"
+    },
+    "borderRight": {
+      "className": "border-r",
+      "values": "borders"
+    },
+    "borderRightColor": {
+      "className": "border-r",
+      "values": "colors"
+    },
+    "borderInlineEnd": {
+      "className": "border-e",
+      "values": "borders",
+      "shorthand": "borderEnd"
+    },
+    "borderInlineEndColor": {
+      "className": "border-e",
+      "values": "colors",
+      "shorthand": "borderEndColor"
+    },
+    "borderTop": {
+      "className": "border-t",
+      "values": "borders"
+    },
+    "borderTopColor": {
+      "className": "border-t",
+      "values": "colors"
+    },
+    "borderBottom": {
+      "className": "border-b",
+      "values": "borders"
+    },
+    "borderBottomColor": {
+      "className": "border-b",
+      "values": "colors"
+    },
+    "borderBlockEnd": {
+      "className": "border-be",
+      "values": "borders"
+    },
+    "borderBlockEndColor": {
+      "className": "border-be",
+      "values": "colors"
+    },
+    "borderBlockStart": {
+      "className": "border-bs",
+      "values": "borders"
+    },
+    "borderBlockStartColor": {
+      "className": "border-bs",
+      "values": "colors"
+    },
+    "boxShadow": {
+      "shorthand": "shadow",
+      "className": "shadow",
+      "values": "shadows"
+    },
+    "boxShadowColor": {
+      "shorthand": "shadowColor",
+      "className": "shadow",
+      "values": "colors"
+    },
+    "mixBlendMode": {
+      "className": "mix-blend"
+    },
+    "filter": {
+      "className": "filter",
+      "values": {
+        "auto": "var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow)"
+      }
+    },
+    "brightness": {
+      "className": "brightness"
+    },
+    "contrast": {
+      "className": "contrast"
+    },
+    "grayscale": {
+      "className": "grayscale"
+    },
+    "hueRotate": {
+      "className": "hue-rotate"
+    },
+    "invert": {
+      "className": "invert"
+    },
+    "saturate": {
+      "className": "saturate"
+    },
+    "sepia": {
+      "className": "sepia"
+    },
+    "dropShadow": {
+      "className": "drop-shadow",
+      "values": "dropShadows"
+    },
+    "blur": {
+      "className": "blur",
+      "values": "blurs"
+    },
+    "backdropFilter": {
+      "className": "backdrop",
+      "values": {
+        "auto": "var(--backdrop-blur) var(--backdrop-brightness) var(--backdrop-contrast) var(--backdrop-grayscale) var(--backdrop-hue-rotate) var(--backdrop-invert) var(--backdrop-saturate) var(--backdrop-sepia)"
+      }
+    },
+    "backdropBlur": {
+      "className": "backdrop-blur",
+      "values": "blurs"
+    },
+    "backdropBrightness": {
+      "className": "backdrop-brightness"
+    },
+    "backdropContrast": {
+      "className": "backdrop-contrast"
+    },
+    "backdropGrayscale": {
+      "className": "backdrop-grayscale"
+    },
+    "backdropHueRotate": {
+      "className": "backdrop-hue-rotate"
+    },
+    "backdropInvert": {
+      "className": "backdrop-invert"
+    },
+    "backdropOpacity": {
+      "className": "backdrop-opacity"
+    },
+    "backdropSaturate": {
+      "className": "backdrop-saturate"
+    },
+    "backdropSepia": {
+      "className": "backdrop-sepia"
+    },
+    "borderCollapse": {
+      "className": "border"
+    },
+    "borderSpacing": {
+      "className": "border-spacing",
+      "values": "spacing"
+    },
+    "borderSpacingX": {
+      "className": "border-spacing-x",
+      "values": "spacing"
+    },
+    "borderSpacingY": {
+      "className": "border-spacing-y",
+      "values": "spacing"
+    },
+    "tableLayout": {
+      "className": "table"
+    },
+    "transitionTimingFunction": {
+      "className": "ease",
+      "values": "easings"
+    },
+    "transitionDelay": {
+      "className": "delay",
+      "values": "durations"
+    },
+    "transitionDuration": {
+      "className": "duration",
+      "values": "durations"
+    },
+    "transitionProperty": {
+      "className": "transition",
+      "values": {
+        "all": "all",
+        "none": "none",
+        "opacity": "opacity",
+        "shadow": "box-shadow",
+        "transform": "transform",
+        "base": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
+        "background": "background, background-color",
+        "colors": "color, background-color, border-color, outline-color, text-decoration-color, fill, stroke"
+      }
+    },
+    "animation": {
+      "className": "animation",
+      "values": "animations"
+    },
+    "animationDelay": {
+      "className": "animation-delay",
+      "values": "durations"
+    },
+    "transformOrigin": {
+      "className": "origin"
+    },
+    "scale": {
+      "className": "scale",
+      "property": "scale",
+      "values": {
+        "auto": "var(--scale-x) var(--scale-y)"
+      }
+    },
+    "scaleX": {
+      "className": "scale-x"
+    },
+    "scaleY": {
+      "className": "scale-y"
+    },
+    "translate": {
+      "className": "translate",
+      "property": "translate",
+      "values": {
+        "auto": "var(--translate-x) var(--translate-y)"
+      }
+    },
+    "translateX": {
+      "shorthand": "x",
+      "className": "translate-x"
+    },
+    "translateY": {
+      "shorthand": "y",
+      "className": "translate-y"
+    },
+    "accentColor": {
+      "className": "accent",
+      "values": "colors"
+    },
+    "caretColor": {
+      "className": "caret",
+      "values": "colors"
+    },
+    "scrollBehavior": {
+      "className": "scroll"
+    },
+    "scrollbar": {
+      "className": "scrollbar",
+      "values": [
+        "visible",
+        "hidden"
+      ]
+    },
+    "scrollMargin": {
+      "className": "scroll-m",
+      "values": "spacing"
+    },
+    "scrollMarginX": {
+      "className": "scroll-mx",
+      "values": "spacing",
+      "property": "scrollMarginInline"
+    },
+    "scrollMarginY": {
+      "className": "scroll-my",
+      "values": "spacing",
+      "property": "scrollMarginBlock"
+    },
+    "scrollMarginLeft": {
+      "className": "scroll-ml",
+      "values": "spacing"
+    },
+    "scrollMarginRight": {
+      "className": "scroll-mr",
+      "values": "spacing"
+    },
+    "scrollMarginTop": {
+      "className": "scroll-mt",
+      "values": "spacing"
+    },
+    "scrollMarginBottom": {
+      "className": "scroll-mb",
+      "values": "spacing"
+    },
+    "scrollMarginBlock": {
+      "className": "scroll-my",
+      "values": "spacing"
+    },
+    "scrollMarginBlockEnd": {
+      "className": "scroll-mb",
+      "values": "spacing"
+    },
+    "scrollMarginBlockStart": {
+      "className": "scroll-mt",
+      "values": "spacing"
+    },
+    "scrollMarginInline": {
+      "className": "scroll-mx",
+      "values": "spacing"
+    },
+    "scrollMarginInlineEnd": {
+      "className": "scroll-me",
+      "values": "spacing"
+    },
+    "scrollMarginInlineStart": {
+      "className": "scroll-ms",
+      "values": "spacing"
+    },
+    "scrollPadding": {
+      "className": "scroll-p",
+      "values": "spacing"
+    },
+    "scrollPaddingBlock": {
+      "className": "scroll-pb",
+      "values": "spacing"
+    },
+    "scrollPaddingBlockStart": {
+      "className": "scroll-pt",
+      "values": "spacing"
+    },
+    "scrollPaddingBlockEnd": {
+      "className": "scroll-pb",
+      "values": "spacing"
+    },
+    "scrollPaddingInline": {
+      "className": "scroll-px",
+      "values": "spacing"
+    },
+    "scrollPaddingInlineEnd": {
+      "className": "scroll-pe",
+      "values": "spacing"
+    },
+    "scrollPaddingInlineStart": {
+      "className": "scroll-ps",
+      "values": "spacing"
+    },
+    "scrollPaddingX": {
+      "className": "scroll-px",
+      "values": "spacing",
+      "property": "scrollPaddingInline"
+    },
+    "scrollPaddingY": {
+      "className": "scroll-py",
+      "values": "spacing",
+      "property": "scrollPaddingBlock"
+    },
+    "scrollPaddingLeft": {
+      "className": "scroll-pl",
+      "values": "spacing"
+    },
+    "scrollPaddingRight": {
+      "className": "scroll-pr",
+      "values": "spacing"
+    },
+    "scrollPaddingTop": {
+      "className": "scroll-pt",
+      "values": "spacing"
+    },
+    "scrollPaddingBottom": {
+      "className": "scroll-pb",
+      "values": "spacing"
+    },
+    "scrollSnapAlign": {
+      "className": "snap"
+    },
+    "scrollSnapStop": {
+      "className": "snap"
+    },
+    "scrollSnapType": {
+      "className": "snap",
+      "values": {
+        "none": "none",
+        "x": "x var(--scroll-snap-strictness)",
+        "y": "y var(--scroll-snap-strictness)",
+        "both": "both var(--scroll-snap-strictness)"
+      }
+    },
+    "scrollSnapStrictness": {
+      "className": "strictness",
+      "values": [
+        "mandatory",
+        "proximity"
+      ]
+    },
+    "scrollSnapMargin": {
+      "className": "snap-m",
+      "values": "spacing"
+    },
+    "scrollSnapMarginTop": {
+      "className": "snap-mt",
+      "values": "spacing"
+    },
+    "scrollSnapMarginBottom": {
+      "className": "snap-mb",
+      "values": "spacing"
+    },
+    "scrollSnapMarginLeft": {
+      "className": "snap-ml",
+      "values": "spacing"
+    },
+    "scrollSnapMarginRight": {
+      "className": "snap-mr",
+      "values": "spacing"
+    },
+    "touchAction": {
+      "className": "touch"
+    },
+    "userSelect": {
+      "className": "select"
+    },
+    "fill": {
+      "className": "fill",
+      "values": "colors"
+    },
+    "stroke": {
+      "className": "stroke",
+      "values": "colors"
+    },
+    "srOnly": {
+      "className": "sr",
+      "values": {
+        "type": "boolean"
+      }
+    },
+    "debug": {
+      "className": "debug",
+      "values": {
+        "type": "boolean"
+      }
+    },
+    "appearance": {
+      "className": "appearance"
+    },
+    "backfaceVisibility": {
+      "className": "backface"
+    },
+    "clipPath": {
+      "className": "clip-path"
+    },
+    "hyphens": {
+      "className": "hyphens"
+    },
+    "mask": {
+      "className": "mask"
+    },
+    "maskImage": {
+      "className": "mask-image"
+    },
+    "maskSize": {
+      "className": "mask-size"
+    },
+    "textSizeAdjust": {
+      "className": "text-size-adjust"
+    },
+    "colorPalette": {
+      "values": [
+        "gray",
+        "error",
+        "success"
+      ]
+    },
+    "textStyle": {
+      "layer": "compositions",
+      "className": "textStyle",
+      "values": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "2xl",
+        "3xl",
+        "4xl",
+        "5xl",
+        "6xl",
+        "7xl",
+        "8xl",
+        "9xl"
+      ]
+    }
+  },
+  "preflight": true,
+  "include": [
+    "./src/components/**/*.{ts,tsx,js,jsx}",
+    "./src/pages/**/*.{ts,tsx,js,jsx}",
+    "./src/pages/agendamento/**/*.{ts,tsx,js,jsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}"
+  ],
+  "outdir": "styled-system",
+  "jsxFramework": "react",
+  "cwd": "/home/gabriel/Programming/personal-projects/refer-a-friend",
+  "minify": false,
+  "optimize": true
+}

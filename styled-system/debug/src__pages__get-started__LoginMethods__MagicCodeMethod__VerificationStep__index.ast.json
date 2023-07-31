@@ -1,0 +1,38 @@
+{
+  "css": [],
+  "cva": [],
+  "recipe": {},
+  "pattern": {},
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "Input",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 29,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Button",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 34,
+        "column": 7
+      },
+      "data": [
+        {
+          "bgColor": "#023E8A"
+        }
+      ]
+    }
+  ]
+}

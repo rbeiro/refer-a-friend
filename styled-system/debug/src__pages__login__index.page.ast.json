@@ -1,0 +1,154 @@
+{
+  "css": [],
+  "cva": [],
+  "recipe": {},
+  "pattern": {},
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "Link",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 11,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "CaretLeft",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 12,
+        "column": 11
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "DayLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 15,
+        "column": 11
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Input",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 23,
+        "column": 13
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Button",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 29,
+        "column": 13
+      },
+      "data": [
+        {
+          "bgColor": "rgb(231, 38, 38)"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Button",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 39,
+        "column": 13
+      },
+      "data": [
+        {
+          "bgColor": "rgb(0, 96, 177)"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Button",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 49,
+        "column": 13
+      },
+      "data": [
+        {
+          "bgColor": "#000000"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "GoogleLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 36,
+        "column": 15
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "FacebookLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 46,
+        "column": 15
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "AppleLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 56,
+        "column": 15
+      },
+      "data": [
+        {}
+      ]
+    }
+  ]
+}

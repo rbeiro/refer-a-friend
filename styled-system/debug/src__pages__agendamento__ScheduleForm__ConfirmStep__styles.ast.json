@@ -1,0 +1,99 @@
+{
+  "css": [
+    {
+      "type": "object",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 39,
+        "column": 19
+      },
+      "data": [
+        {}
+      ]
+    }
+  ],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 5,
+        "column": 21
+      },
+      "data": [
+        {
+          "base": {
+            "width": "540px",
+            "margin": "1.5rem auto 0",
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 15,
+        "column": 20
+      },
+      "data": [
+        {
+          "base": {
+            "display": "flex",
+            "alignItems": "center",
+            "gap": "1rem",
+            "paddingBottom": "1.5rem",
+            "marginBottom": ".5rem",
+            "borderBottom": "1px solid token(colors.gray.600)",
+            "& > p": {
+              "display": "flex",
+              "alignItems": "center",
+              "gap": ".5rem",
+              "& svg": {
+                "color": "token(colors.gray.200)",
+                "width": "1.25rem",
+                "height": "1.25rem"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 41,
+        "column": 21
+      },
+      "data": [
+        {
+          "base": {
+            "display": "flex",
+            "justifyContent": "flex-end",
+            "gap": ".5rem",
+            "marginTop": ".5rem"
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": []
+}

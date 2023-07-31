@@ -1,0 +1,46 @@
+{
+  "css": [
+    {
+      "type": "object",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 15,
+        "column": 27
+      },
+      "data": [
+        {}
+      ]
+    }
+  ],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 4,
+        "column": 32
+      },
+      "data": [
+        {
+          "base": {
+            "maxWidth": "400px",
+            "width": "100%",
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "1rem"
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": []
+}

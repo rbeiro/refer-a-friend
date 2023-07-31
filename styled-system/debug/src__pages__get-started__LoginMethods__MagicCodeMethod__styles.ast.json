@@ -1,0 +1,30 @@
+{
+  "css": [],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 3,
+        "column": 19
+      },
+      "data": [
+        {
+          "base": {
+            "width": "100%",
+            "maxWidth": "400px",
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "1rem"
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": []
+}

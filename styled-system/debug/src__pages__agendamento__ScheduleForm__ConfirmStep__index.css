@@ -1,0 +1,9 @@
+@layer utilities {
+  .bg_transparent {
+    background-color: transparent
+    }
+
+  .bg_\#023E8A {
+    background-color: #023E8A
+    }
+}

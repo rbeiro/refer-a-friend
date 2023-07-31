@@ -1,0 +1,44 @@
+{
+  "css": [],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 16,
+        "column": 21
+      },
+      "data": [
+        {
+          "base": {
+            "borderRadius": "var(--rounded-md)",
+            "background": "gray.800",
+            "border": "1px solid token(colors.gray.600)",
+            "p": "1rem"
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "StyledBox",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 25,
+        "column": 10
+      },
+      "data": [
+        {}
+      ]
+    }
+  ]
+}

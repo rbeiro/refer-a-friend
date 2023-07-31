@@ -1,0 +1,105 @@
+{
+  "css": [],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 5,
+        "column": 24
+      },
+      "data": [
+        {
+          "base": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "2rem"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 14,
+        "column": 28
+      },
+      "data": [
+        {
+          "base": {
+            "height": "50px",
+            "width": "100%",
+            "maxWidth": "500px",
+            "position": "relative",
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "gap": ".5rem"
+          },
+          "variants": {
+            "hasErrorMessage": {
+              "true": {
+                "border": "1px solid token(colors.error.border)",
+                "borderRadius": "var(--rounded-md)",
+                "color": "error.color",
+                "background": "error.background"
+              }
+            },
+            "hasSuccessMessage": {
+              "true": {
+                "border": "1px solid token(colors.success.border)",
+                "borderRadius": "var(--rounded-md)",
+                "color": "success.color",
+                "background": "success.background"
+              }
+            },
+            "isLoading": {
+              "true": {
+                "border": "1px solid token(colors.gray.7)",
+                "borderRadius": "var(--rounded-md)",
+                "color": "gray.11",
+                "background": "gray.2"
+              }
+            }
+          },
+          "defaultVariants": {
+            "hasErrorMessage": false,
+            "hasSuccessMessage": false,
+            "isLoading": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 60,
+        "column": 29
+      },
+      "data": [
+        {
+          "base": {
+            "position": "relative",
+            "height": "50px",
+            "width": "50px"
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": []
+}

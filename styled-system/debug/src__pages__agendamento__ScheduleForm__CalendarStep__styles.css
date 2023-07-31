@@ -1,0 +1,143 @@
+@layer utilities {
+  .m_1\.5rem_auto_0 {
+    margin: 1.5rem auto 0
+    }
+
+  .p_0 {
+    padding: 0
+    }
+
+  .max-w_100\% {
+    max-width: 100%
+    }
+
+  .pos_relative {
+    position: relative
+    }
+
+  .grid-cols_1fr_280px {
+    grid-template-columns: 1fr 280px
+    }
+
+  .w_540px {
+    width: 540px
+    }
+
+  .border-l_1px_solid_var\(--color-gray600\) {
+    border-left: 1px solid var(--color-gray600)
+    }
+
+  .p_1\.5rem_1\.5rem_0 {
+    padding: 1.5rem 1.5rem 0
+    }
+
+  .overflow-y_scroll {
+    overflow-y: scroll
+    }
+
+  .pos_absolute {
+    position: absolute
+    }
+
+  .top_0 {
+    top: 0
+    }
+
+  .bottom_0 {
+    bottom: 0
+    }
+
+  .right_0 {
+    right: 0
+    }
+
+  .w_280px {
+    width: 280px
+    }
+
+  .font_500 {
+    font-weight: 500
+    }
+
+  .\[\&_span\]\:text_gray\.200 span {
+    color: var(--colors-gray-200)
+        }
+
+  .mt_0\.75rem {
+    margin-top: 0.75rem
+    }
+
+  .d_grid {
+    display: grid
+    }
+
+  .grid-cols_1fr {
+    grid-template-columns: 1fr
+    }
+
+  .gap_0\.5rem {
+    gap: 0.5rem
+    }
+
+  .bg_var\(--color-gray600\) {
+    background-color: var(--color-gray600)
+    }
+
+  .p_0\.5rem_0 {
+    padding: 0.5rem 0
+    }
+
+  .cursor_pointer {
+    cursor: pointer
+    }
+
+  .text_hiContrast {
+    color: var(--colors-hi-contrast)
+    }
+
+  .rounded_var\(--rounded-md\) {
+    border-radius: var(--rounded-md)
+    }
+
+  .fs_var\(--fontSize-sm\) {
+    font-size: var(--fontSize-sm)
+    }
+
+  .leading_var\(--lineHeight-base\) {
+    line-height: var(--lineHeight-base)
+    }
+
+  .\[\&\:last-child\]\:mb_1\.5rem:last-child {
+    margin-bottom: 1.5rem
+        }
+
+  .\[\&\:disabled\]\:bg_none:disabled {
+    background: none
+        }
+
+  .\[\&\:disabled\]\:cursor_default:disabled {
+    cursor: default
+        }
+
+  .\[\&\:disabled\]\:opacity_0\.4:disabled {
+    opacity: 0.4
+        }
+
+  .\[\&\:focus\]\:shadow_0_0_0_2px_var\(--color-hiConstrast\):focus {
+    box-shadow: 0 0 0 2px var(--color-hiConstrast)
+        }
+
+  .\[\&\:not\(\:disabled\)\:hover\]\:bg_var\(--color-gray500\):not(:disabled):hover {
+    background: var(--color-gray500)
+        }
+
+  @media(max-width: 900px) {
+    .\[\@media\(max-width\:_900px\)\]\:grid-cols_1fr {
+      grid-template-columns: 1fr
+    }
+
+    .\[\@media\(max-width\:_900px\)\]\:grid-cols_2fr {
+      grid-template-columns: 2fr
+    }
+        }
+}
