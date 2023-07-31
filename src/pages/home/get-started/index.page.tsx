@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../../styles/pages/Login.module.scss";
+import styles from "../../../styles/pages/Login.module.scss";
 import { CaretLeft } from "@phosphor-icons/react";
 import { DayLogo } from "@/assets/icons";
 import { LoginMethods } from "./LoginMethods";
