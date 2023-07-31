@@ -12,14 +12,12 @@ const Header = ({ user }: BaseProps) => {
     signOut()
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
-      
-      return void
   }
   return (
     <>
       <div>Hello World</div>
       <h1>Olá, {user?.name ? user?.name : "nenhum usuário encontrado"}</h1>
-      <Button onClick={async () => handleSignOut()}>Sair</Button>
+      <Button onClick={() => handleSignOut()}>Sair</Button>
     </>
   );
 };
