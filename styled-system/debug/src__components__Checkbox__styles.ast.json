@@ -27,6 +27,9 @@
             "justifyContent": "center",
             "alignItems": "center",
             "border": "2px solid token(colors.gray.900)",
+            "&[data-state=\"checked\"]": {
+              "backgroundColor": "primary"
+            },
             "&:focus": {
               "border": "2px solid token(colors.primary)"
             }
@@ -41,16 +44,23 @@
         "type": "map",
         "value": {},
         "node": "CallExpression",
-        "line": 26,
+        "line": 31,
         "column": 34
       },
       "data": [
         {
           "base": {
+            "display": "flex",
             "color": "hiContrast",
             "lineHeight": "0",
             "width": "1rem",
-            "height": "1rem"
+            "height": "1rem",
+            "&[data-state=\"checked\"]": {
+              "animation": "slideIn 150ms var(--transition-basic)"
+            },
+            "&[data-state=\"unchecked\"]": {
+              "animation": "slideOut 150ms var(--transition-basic)"
+            }
           }
         }
       ]

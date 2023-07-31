@@ -1,0 +1,108 @@
+{
+  "css": [],
+  "cva": [],
+  "recipe": {},
+  "pattern": {},
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "IntervalBox",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 13,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "IntervalItem",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 14,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "IntervalDay",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 15,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Checkbox",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 16,
+        "column": 11
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Text",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 17,
+        "column": 11
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "IntervalInputs",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 19,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "TextInput",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 20,
+        "column": 11
+      },
+      "data": [
+        {
+          "size": "sm"
+        }
+      ]
+    }
+  ]
+}

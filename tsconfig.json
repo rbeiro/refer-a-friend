@@ -26,8 +26,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.cjs",
-    "**/*.mjs",
+    "**/*.cts",
+    "**/*.mts",
     "src/middleware.page.ts"
   ],
   "exclude": ["node_modules"]

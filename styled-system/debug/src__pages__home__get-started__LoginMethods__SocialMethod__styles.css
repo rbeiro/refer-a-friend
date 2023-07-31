@@ -1,0 +1,25 @@
+@layer utilities {
+  .max-w_400px {
+    max-width: 400px
+    }
+
+  .w_100\% {
+    width: 100%
+    }
+
+  .d_flex {
+    display: flex
+    }
+
+  .flex_column {
+    flex-direction: column
+    }
+
+  .items_center {
+    align-items: center
+    }
+
+  .gap_1rem {
+    gap: 1rem
+    }
+}

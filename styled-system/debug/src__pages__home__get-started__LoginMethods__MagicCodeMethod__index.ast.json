@@ -1,0 +1,94 @@
+{
+  "css": [],
+  "cva": [],
+  "recipe": {},
+  "pattern": {},
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "VerificationStep",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 68,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "EmailForm",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 78,
+        "column": 7
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Input",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 79,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Input",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 84,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Input",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 90,
+        "column": 9
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "Button",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 95,
+        "column": 9
+      },
+      "data": [
+        {
+          "bgColor": "#023E8A"
+        }
+      ]
+    }
+  ]
+}

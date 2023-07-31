@@ -1,0 +1,103 @@
+{
+  "css": [],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 3,
+        "column": 35
+      },
+      "data": [
+        {
+          "base": {
+            "backgroundColor": "gray.900",
+            "borderRadius": "6px",
+            "boxSizing": "border-box",
+            "border": "2px solid tokens(colors.gray.900)",
+            "display": "flex",
+            "alignItems": "center",
+            "&:has(input:focus)": {
+              "borderColor": "primary"
+            },
+            "&:has(input:disabled)": {
+              "opacity": 0.5,
+              "cursor": "not-allowed"
+            }
+          },
+          "variants": {
+            "size": {
+              "sm": {
+                "padding": ".5rem .75rem"
+              },
+              "md": {
+                "padding": ".75rem 1rem"
+              }
+            }
+          },
+          "defaultVariants": {
+            "size": "md"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 38,
+        "column": 23
+      },
+      "data": [
+        {
+          "base": {
+            "fontSize": "0.875rem",
+            "color": "gray.400",
+            "fontWeight": "regular"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 46,
+        "column": 22
+      },
+      "data": [
+        {
+          "base": {
+            "fontSize": "0.875rem",
+            "color": "hiContrast",
+            "fontWeight": "regular",
+            "background": "transparent!",
+            "border": 0,
+            "width": "100%",
+            "&:focus": {
+              "outline": 0
+            },
+            "&:disabled": {
+              "cursor": "not-allowed"
+            },
+            "&::placeholder": {
+              "color": "gray.400"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": []
+}

@@ -1,0 +1,112 @@
+{
+  "css": [],
+  "cva": [
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 4,
+        "column": 28
+      },
+      "data": [
+        {
+          "base": {
+            "marginTop": "1.5rem",
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 12,
+        "column": 34
+      },
+      "data": [
+        {
+          "base": {
+            "border": "1px solid token(colors.gray.600)",
+            "borderRadius": "8px",
+            "marginBottom": "1rem"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 20,
+        "column": 29
+      },
+      "data": [
+        {
+          "base": {
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "padding": "0.75rem 1rem",
+            "& + &": {
+              "borderTop": "1px solid token(colors.gray.600)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 33,
+        "column": 28
+      },
+      "data": [
+        {
+          "base": {
+            "display": "flex",
+            "alignItems": "center",
+            "gap": "0.75rem"
+          }
+        }
+      ]
+    },
+    {
+      "type": "cva",
+      "name": "styled",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "CallExpression",
+        "line": 40,
+        "column": 31
+      },
+      "data": [
+        {
+          "base": {
+            "display": "flex",
+            "alignItems": "center",
+            "gap": "0.5rem"
+          }
+        }
+      ]
+    }
+  ],
+  "recipe": {},
+  "pattern": {},
+  "jsx": []
+}

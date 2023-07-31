@@ -1,0 +1,118 @@
+{
+  "css": [],
+  "cva": [],
+  "recipe": {},
+  "pattern": {},
+  "jsx": [
+    {
+      "type": "jsx",
+      "name": "SocialButtonsContainer",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 6,
+        "column": 5
+      },
+      "data": [
+        {}
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "SocialLoginAction",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 8,
+        "column": 7
+      },
+      "data": [
+        {
+          "bgColor": "rgb(231, 38, 38)!"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "SocialLoginAction",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 16,
+        "column": 7
+      },
+      "data": [
+        {
+          "bgColor": "rgb(0, 96, 177)!"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "SocialLoginAction",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxOpeningElement",
+        "line": 24,
+        "column": 7
+      },
+      "data": [
+        {
+          "bgColor": "#000000!"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "GoogleLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 13,
+        "column": 9
+      },
+      "data": [
+        {
+          "color": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "FacebookLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 21,
+        "column": 9
+      },
+      "data": [
+        {
+          "color": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "jsx",
+      "name": "AppleLogo",
+      "box": {
+        "type": "map",
+        "value": {},
+        "node": "JsxSelfClosingElement",
+        "line": 25,
+        "column": 9
+      },
+      "data": [
+        {
+          "color": "#fff"
+        }
+      ]
+    }
+  ]
+}

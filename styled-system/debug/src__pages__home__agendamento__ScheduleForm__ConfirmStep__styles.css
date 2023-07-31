@@ -1,0 +1,73 @@
+@layer utilities {
+  .w_540px {
+    width: 540px
+    }
+
+  .m_1\.5rem_auto_0 {
+    margin: 1.5rem auto 0
+    }
+
+  .flex_column {
+    flex-direction: column
+    }
+
+  .items_center {
+    align-items: center
+    }
+
+  .gap_1rem {
+    gap: 1rem
+    }
+
+  .pb_1\.5rem {
+    padding-bottom: 1.5rem
+    }
+
+  .mb_\.5rem {
+    margin-bottom: .5rem
+    }
+
+  .border-b_1px_solid_token\(colors\.gray\.600\) {
+    border-bottom: 1px solid var(--colors-gray-600)
+    }
+
+  .\[\&_\>_p\]\:d_flex > p {
+    display: flex
+        }
+
+  .\[\&_\>_p\]\:items_center > p {
+    align-items: center
+        }
+
+  .\[\&_\>_p\]\:gap_\.5rem > p {
+    gap: .5rem
+        }
+
+  .\[\&_\>_p\]\:\[\&_svg\]\:text_token\(colors\.gray\.200\) > p svg {
+    color: var(--colors-gray-200)
+            }
+
+  .\[\&_\>_p\]\:\[\&_svg\]\:w_1\.25rem > p svg {
+    width: 1.25rem
+            }
+
+  .\[\&_\>_p\]\:\[\&_svg\]\:h_1\.25rem > p svg {
+    height: 1.25rem
+            }
+
+  .d_flex {
+    display: flex
+    }
+
+  .justify_flex-end {
+    justify-content: flex-end
+    }
+
+  .gap_\.5rem {
+    gap: .5rem
+    }
+
+  .mt_\.5rem {
+    margin-top: .5rem
+    }
+}

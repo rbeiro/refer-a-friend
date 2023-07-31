@@ -1,0 +1,93 @@
+@layer utilities {
+  .flex_column {
+    flex-direction: column
+    }
+
+  .gap_1\.75rem {
+    gap: 1.75rem
+    }
+
+  .text_center {
+    text-align: center
+    }
+
+  .d_flex {
+    display: flex
+    }
+
+  .items_center {
+    align-items: center
+    }
+
+  .gap_6px {
+    gap: 6px
+    }
+
+  .w_100\% {
+    width: 100%
+    }
+
+  .max-w_400px {
+    max-width: 400px
+    }
+
+  .text_var\(--color-gray600\) {
+    color: var(--color-gray600)
+    }
+
+  .before\:content_\"\"::before {
+    content: ""
+        }
+
+  .before\:d_block::before {
+    display: block
+        }
+
+  .before\:w_100\%::before {
+    width: 100%
+        }
+
+  .before\:h_1px::before {
+    height: 1px
+        }
+
+  .before\:bg_var\(--color-gray600\)::before {
+    background-color: var(--color-gray600)
+        }
+
+  .before\:rounded-tl_var\(--roudned-md\)::before {
+    border-top-left-radius: var(--roudned-md)
+        }
+
+  .before\:rounded-bl_var\(--roudned-md\)::before {
+    border-bottom-left-radius: var(--roudned-md)
+        }
+
+  .after\:content_\"\"::after {
+    content: ""
+        }
+
+  .after\:d_block::after {
+    display: block
+        }
+
+  .after\:w_100\%::after {
+    width: 100%
+        }
+
+  .after\:h_1px::after {
+    height: 1px
+        }
+
+  .after\:bg_var\(--color-gray600\)::after {
+    background-color: var(--color-gray600)
+        }
+
+  .after\:rounded-tr_var\(--roudned-md\)::after {
+    border-top-right-radius: var(--roudned-md)
+        }
+
+  .after\:rounded-br_var\(--roudned-md\)::after {
+    border-bottom-right-radius: var(--roudned-md)
+        }
+}
