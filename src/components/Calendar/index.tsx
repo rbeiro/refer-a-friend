@@ -139,7 +139,9 @@ const Calendar = ({ selectedDate, onDateSelected }: CalendarProps) => {
                       <button
                         className={styles["calendar__day"]}
                         disabled={disabled}
-                        onClick={() => onDateSelected(date.toDate())}
+                        onClick={() =>
+                          onDateSelected ? onDateSelected(date.toDate()) : ""
+                        }
                       >
                         {date.get("date")}
                       </button>

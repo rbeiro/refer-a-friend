@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#custom project vscode settings
+/.vscode/
+
 # testing
 /coverage
 
