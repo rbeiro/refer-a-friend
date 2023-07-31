@@ -109,7 +109,9 @@ export function buildNextAuthOptions(
                   // logger.error('SEND_VERIFICATION_EMAIL_ERROR', email, error);
                   console.error("SEND_VERIFICATION_EMAIL_ERROR", email, error);
                   return reject(
-                    new Error(`SEND_VERIFICATION_EMAIL_ERROR ${error}`)
+                    new Error(`SEND_VERIFICATION_EMAIL_ERROR`, {
+                      cause: error,
+                    })
                   );
                 }
                 return resolve();

@@ -177,7 +177,7 @@ export function PrismaAdapter(
           email: user.email!,
           emailVerified: user.emailVerified,
           image: user.image!,
-          phoneNumber: user.phoneNumber! as bigint,
+          phoneNumber: user.phoneNumber!,
         },
       };
     },
