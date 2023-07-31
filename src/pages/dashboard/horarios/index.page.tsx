@@ -10,7 +10,7 @@ import { Text } from "@/components/Text";
 
 export default function Dashboard() {
   return (
-    <IntervalBox as="form">
+    <IntervalBox>
       <IntervalItem>
         <IntervalDay>
           <Checkbox />
