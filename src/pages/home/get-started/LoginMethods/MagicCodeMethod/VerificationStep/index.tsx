@@ -10,6 +10,7 @@ import { CheckIcon, ExclamationTriangleIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/router";
 import { getSession } from "next-auth/react";
 import { type GetServerSideProps } from "next";
+import { env } from "@/env.mjs";
 interface VerificationStepProps {
   userEmail?: string;
   setEmailWasSubmitted: Dispatch<SetStateAction<boolean>>;
@@ -31,7 +32,9 @@ const VerificationStep = ({
     setVerificationErrorMessage("");
     setIsVerificationLoading(true);
 
-    const verificationUrl = `http://localhost:3000/api/auth/callback/email?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fget-started&token=${verificaitonCode}&email=${
+    console.log(env.NEXT_PUBLIC_ROOT_DOMAIN);
+
+    const verificationUrl = `http://test.com:3000/api/auth/callback/email?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fget-started&token=${verificaitonCode}&email=${
       userEmail || ""
     }`;
     fetch(verificationUrl)

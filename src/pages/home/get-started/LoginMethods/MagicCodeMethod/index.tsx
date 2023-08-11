@@ -27,7 +27,7 @@ const MagicCodeMethod = ({
     {
       onSuccess: () => {
         signIn("email", {
-          email: userEmail,
+          email: "gaah.11.r@gmail.com",
           redirect: false,
         })
           .then(() => setEmailWasSubmitted(true))

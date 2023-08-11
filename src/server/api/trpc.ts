@@ -57,6 +57,7 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
 
   // Get the session from the server using the getServerSession wrapper function
   const session = await getServerAuthSession({ req, res });
+  console.log("SESSION CONTEXT", session);
 
   return createInnerTRPCContext({
     session,
@@ -123,6 +124,20 @@ const enforceUserIsAuthed = t.middleware(({ ctx, next }) => {
   });
 });
 
+const enforceUserIsAdmin = t.middleware(({ ctx, next }) => {
+  console.log("USER FROM TRPC", ctx.session);
+  if (!ctx.session || ctx.session.user.role !== "ADMIN") {
+    throw new TRPCError({ code: "UNAUTHORIZED" });
+  }
+
+  return next({
+    ctx: {
+      // infers the `session` as non-nullable
+      session: { ...ctx.session, user: ctx.session.user },
+    },
+  });
+});
+
 /**
  * Protected (authenticated) procedure
  *
@@ -131,4 +146,5 @@ const enforceUserIsAuthed = t.middleware(({ ctx, next }) => {
  *
  * @see https://trpc.io/docs/procedures
  */
+export const adminProcedure = t.procedure.use(enforceUserIsAdmin);
 export const protectedProcedure = t.procedure.use(enforceUserIsAuthed);

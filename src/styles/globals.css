@@ -4,6 +4,8 @@
 
 :root {
   --color-primary: #4ea8de;
+  --button-bg-color: var(--color-primary);
+  --button-bg-hover: #5fb0e1;
 
   --color-gray100: #e1e1e6;
   --color-gray200: #a9a9b2;

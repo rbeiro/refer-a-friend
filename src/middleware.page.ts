@@ -17,11 +17,11 @@ export const config = {
 
 export default function middleware(req: NextRequest) {
   const url = req.nextUrl;
-
   // Get hostname of request (e.g. demo.vercel.pub, demo.localhost:3000)
   const hostname = req.headers
     .get("host")!
-    .replace(".localhost:3000", `.${env.NEXT_PUBLIC_ROOT_DOMAIN}`);
+    .replace(".test.com:3000", `.${env.NEXT_PUBLIC_ROOT_DOMAIN}`);
+  console.log(hostname);
 
   // Get the pathname of the request (e.g. /, /about, /blog/first-post)
   const path = url.pathname;
@@ -35,7 +35,7 @@ export default function middleware(req: NextRequest) {
 
   // rewrite root application to `/home` folder
   if (
-    hostname === "localhost:3000" ||
+    hostname === "test.com:3000" ||
     hostname === env.NEXT_PUBLIC_ROOT_DOMAIN
   ) {
     return NextResponse.rewrite(new URL(`/home${path}`, req.url));

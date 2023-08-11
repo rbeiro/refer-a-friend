@@ -1,9 +1,8 @@
-import { Header } from "@/components/Header";
 import { getServerAuthSession } from "@/server/auth";
 import { api } from "@/utils/api";
 import { Button } from "@rbeiro-ui/react-components";
 import { type GetServerSideProps } from "next";
-import { getSession, signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
 interface BaseProps {
@@ -16,6 +15,8 @@ interface BaseProps {
 }
 
 export default function Home({ user }: BaseProps) {
+  const { data: session, status } = useSession();
+  console.log(session);
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   function handleSignOut() {
@@ -25,6 +26,7 @@ export default function Home({ user }: BaseProps) {
   return (
     <>
       <h1>Hello, {user?.name}</h1>
+      <p></p>
       {user && <Button onClick={handleSignOut}>Deslogar</Button>}
       {!user && <Link href="/get-started">Fazer login</Link>}
     </>
@@ -33,7 +35,6 @@ export default function Home({ user }: BaseProps) {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getServerAuthSession(context);
-  console.log("session from home page: ", session);
 
   return {
     props: {

@@ -4,7 +4,6 @@ import { CaretLeft } from "@phosphor-icons/react";
 import { DayLogo } from "@/assets/icons";
 import { LoginMethods } from "./LoginMethods";
 import { type GetServerSideProps } from "next";
-import { getSession } from "next-auth/react";
 import { getServerAuthSession } from "@/server/auth";
 
 const Login = () => {

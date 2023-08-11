@@ -7,6 +7,7 @@ import {
   getServerSession,
   type NextAuthOptions,
   type DefaultSession,
+  type DefaultUser,
 } from "next-auth";
 import DiscordProvider from "next-auth/providers/discord";
 import EmailProvider from "next-auth/providers/email";
@@ -15,6 +16,8 @@ import { env } from "@/env.mjs";
 import { createTransport } from "nodemailer";
 import { html } from "@/utils/createHTMLForEmail";
 import { PrismaAdapter } from "@/lib/auth/prisma-adapter";
+import { type Role } from "@prisma/client";
+import { AdapterUser } from "next-auth/adapters";
 
 function randomStr(len: number, arr: string) {
   let ans = "";
@@ -39,9 +42,14 @@ declare module "next-auth" {
   interface Session extends DefaultSession {
     user: {
       id: string;
+      role: Role;
       // ...other properties
       // role: UserRole;
     } & DefaultSession["user"];
+  }
+
+  interface User extends DefaultUser {
+    role: Role;
   }
 
   // interface User {
@@ -61,16 +69,28 @@ export function buildNextAuthOptions(
 ): NextAuthOptions {
   return {
     secret: env.NEXTAUTH_SECRET,
-    callbacks: {
-      signIn(params) {
-        console.log(params);
-        return true;
+    cookies: {
+      sessionToken: {
+        name:
+          process.env.NODE_ENV === "production"
+            ? `__Secure-next-auth.session-token`
+            : `next-auth.session-token`,
+        options: {
+          httpOnly: true,
+          sameSite: "lax",
+          path: "/",
+          domain: ".test.com",
+          secure: process.env.NODE_ENV === "production" ? true : false,
+        },
       },
+    },
+    callbacks: {
       session: ({ session, user }) => ({
         ...session,
         user: {
           ...session.user,
           id: user.id,
+          role: user.role,
         },
       }),
     },
@@ -138,7 +158,7 @@ export function buildNextAuthOptions(
   };
 }
 
-const authOptions = buildNextAuthOptions();
+export const authOptions = buildNextAuthOptions();
 
 /**
  * Wrapper for `getServerSession` so that you don't need to import the `authOptions` in every file.

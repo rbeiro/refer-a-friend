@@ -22,18 +22,16 @@ export function PrismaAdapter(
         phoneNumber: number;
       };
 
-      console.log(typeof userAdditionalData.phoneNumber);
-
       const prismaUser = await prisma.user.create({
         data: {
           email,
           name: name || userAdditionalData.name,
           phoneNumber: userAdditionalData.phoneNumber,
+          role: "USER",
           image,
           emailVerified,
         },
       });
-      console.log(prismaUser);
 
       destroyCookie({ res }, "@will-have-a-name:userName", {
         path: "/",
@@ -45,6 +43,7 @@ export function PrismaAdapter(
         email: prismaUser.email!,
         emailVerified: prismaUser.emailVerified,
         image: prismaUser.image!,
+        role: prismaUser.role,
       };
     },
 
@@ -63,6 +62,7 @@ export function PrismaAdapter(
         email: user.email!,
         emailVerified: user.emailVerified,
         image: user.image!,
+        role: user.role,
       };
     },
     async getUserByEmail(email) {
@@ -80,6 +80,7 @@ export function PrismaAdapter(
         email: user.email!,
         emailVerified: user.emailVerified,
         image: user.image!,
+        role: user.role,
       };
     },
     async getUserByAccount({ providerAccountId, provider }) {
@@ -105,6 +106,7 @@ export function PrismaAdapter(
         email: user.email!,
         emailVerified: user.emailVerified,
         image: user.image!,
+        role: user.role,
       };
     },
 
@@ -126,6 +128,7 @@ export function PrismaAdapter(
         email: prismaUser.email!,
         emailVerified: prismaUser.emailVerified,
         image: prismaUser.image!,
+        role: prismaUser.role,
       };
     },
 
@@ -178,6 +181,7 @@ export function PrismaAdapter(
           emailVerified: user.emailVerified,
           image: user.image!,
           phoneNumber: user.phoneNumber!,
+          role: user.role,
         },
       };
     },

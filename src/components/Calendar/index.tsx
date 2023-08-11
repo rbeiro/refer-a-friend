@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { getWeekDays } from "@/utils/get-week-days";
 import dayjs from "dayjs";
 import { useMemo, useState } from "react";
+import { api } from "@/utils/api";
 
 interface CalendarWeek {
   week: number;
@@ -16,14 +17,27 @@ type CalendarWeeks = CalendarWeek[];
 
 interface CalendarProps {
   selectedDate?: Date | null;
+  setBlockedDates?: (date: Date) => BlockedDates | undefined;
   onDateSelected?: (date: Date) => void;
 }
 
-const Calendar = ({ selectedDate, onDateSelected }: CalendarProps) => {
+interface BlockedDates {
+  blockedWeekDays: Array<number>;
+}
+
+const Calendar = ({
+  selectedDate,
+  onDateSelected,
+  setBlockedDates,
+}: CalendarProps) => {
   const [currentDate, setCurrentDate] = useState(() => {
     return dayjs().set("date", 1);
   });
 
+  const { data: blockedDates } = api.timeIntervals.blockedDates.useQuery({
+    year: dayjs(currentDate).format("YYYY"),
+    month: dayjs(currentDate).format("MM"),
+  });
   function handlePreviousMonth() {
     const previousMonthDate = currentDate.subtract(1, "month");
     setCurrentDate(previousMonthDate);
@@ -76,8 +90,7 @@ const Calendar = ({ selectedDate, onDateSelected }: CalendarProps) => {
           date,
           disabled:
             date.endOf("day").isBefore(new Date()) ||
-            date.day() === 0 || // domingo
-            date.day() === 1, // segunda
+            blockedDates?.blockedWeekDays.includes(date.get("day")),
         };
       }),
       ...nextMonthFillArray.map((date) => {
@@ -102,6 +115,8 @@ const Calendar = ({ selectedDate, onDateSelected }: CalendarProps) => {
     );
     return calendarWeeks;
   }, [currentDate]);
+
+  console.log(blockedDates);
 
   return (
     <div className={styles["calendar__container"]}>

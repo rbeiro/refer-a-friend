@@ -8,16 +8,23 @@ import {
 } from "./styles";
 import { useState } from "react";
 import dayjs from "dayjs";
+import { api } from "@/utils/api";
 
 const CalendarStep = () => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-
   const isDateSelected = !!selectedDate;
 
   const weekDay = selectedDate ? dayjs(selectedDate).format("dddd") : null;
   const dateAndMonth = selectedDate
     ? dayjs(selectedDate).format("DD[ de ]MMMM")
     : null;
+
+  const { data: availability } = api.timeIntervals.availability.useQuery(
+    {
+      date: dayjs(selectedDate).format("YYYY-MM-DD"),
+    },
+    { enabled: !!selectedDate }
+  );
 
   return (
     <Container isTimePickerOpen={isDateSelected}>
@@ -30,16 +37,14 @@ const CalendarStep = () => {
           </TimePickerHeader>
 
           <TimePickerList>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
-            <TimePickerItem>00:00</TimePickerItem>
+            {availability?.possibleTimes?.map((hour) => (
+              <TimePickerItem
+                key={hour}
+                disabled={!availability.availableTimes.includes(hour)}
+              >
+                {String(hour).padStart(2, "0")}:00h
+              </TimePickerItem>
+            ))}
           </TimePickerList>
         </TimePicker>
       )}
